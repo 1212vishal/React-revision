@@ -1,3 +1,133 @@
-#heading{
-   color: brown;
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #0044cc; /* Updated background color for the header */
 }
+
+.logo {
+   width: 100px; /* Adjust size as needed */
+   height: auto;
+}
+
+.nav-container {
+   display: flex;
+}
+
+.nav-items {
+   display: flex;
+   list-style: none; /* Remove default bullet points for list items */
+   padding: 0; /* Remove default padding */
+   margin: 0; /* Remove default margin */
+}
+
+.nav-items ul {
+   margin: 0 15px; /* Space between nav items */
+   padding: 0; /* Remove default padding */
+   list-style: none; /* Remove default bullet points */
+   color: white; /* Text color */
+   cursor: pointer; /* Pointer cursor on hover */
+   background-color: #0066ff; /* Updated background color for nav items */
+   padding: 10px 15px; /* Add padding for better spacing */
+   border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.nav-items ul:hover {
+   text-decoration: underline; /* Optional: underline text on hover */
+   background-color: #0052cc; /* Optional: Background color on hover */
+}
+
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0; /* Light background color */
+}
+
+.body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: calc(100vh - 100px); /* Adjust for footer space */
+   padding: 20px; /* Padding for content */
+   box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px; /* Space below the search bar */
+}
+
+.search-box {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-right: 10px; /* Space between search box and button */
+   width: 300px; /* Width of the search box */
+}
+
+.search-box:focus {
+   outline: none;
+   border-color: #0066ff; /* Border color on focus */
+}
+
+.search-button {
+   padding: 10px 20px;
+   background-color: #0066ff; /* Background color for button */
+   color: white; /* Text color for button */
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.search-button:hover {
+   background-color: #0052cc; /* Darker background color on hover */
+}
+
+.search-button:active {
+   background-color: #0041a8; /* Even darker color when active */
+}
+
+.card-items {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px; /* Space between cards */
+   justify-content: center;
+   width: 100%;
+   box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+
+.res-card {
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   width: 300px; /* Fixed width for cards */
+   transition: transform 0.2s;
+   padding: 15px; /* Add padding for content inside card */
+   text-align: center; /* Center text content */
+}
+
+.res-card img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 5px; /* Rounded corners for image */
+}
+
+.res-card h1 {
+   margin: 10px 0; /* Margin for h1 elements */
+   font-size: 18px; /* Font size for h1 elements */
+   color: #333; /* Text color for h1 elements */
+}
+
+.res-card:hover {
+   transform: scale(1.05); /* Slightly larger on hover */
+}
+
+
+

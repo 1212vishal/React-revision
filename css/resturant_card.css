@@ -1,0 +1,28 @@
+.res-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.2s;
+    padding: 15px; /* Add padding for content inside card */
+    text-align: center; /* Center text content */
+ }
+ 
+ .res-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; /* Rounded corners for image */
+ }
+ 
+ .res-card h1 {
+    margin: 10px 0; /* Margin for h1 elements */
+    font-size: 18px; /* Font size for h1 elements */
+    color: #333; /* Text color for h1 elements */
+ }
+ 
+ .res-card:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+ }

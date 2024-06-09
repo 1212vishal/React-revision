@@ -1,0 +1,78 @@
+.body {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .search {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search .search-input {
+    padding: 12px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+  }
+  
+  .search .filter-button,
+  .search .top-rated-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search .top-rated-button {
+    background-color: #28a745;
+    margin-left: 10px;
+  }
+  
+  .search .filter-button:hover,
+  .search .top-rated-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .RestaurantCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .RestaurantCard img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .RestaurantCard .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .RestaurantCard .rating {
+    margin-top: 5px;
+    color: #007bff;
+    font-size: 14px;
+  }

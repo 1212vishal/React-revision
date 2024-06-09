@@ -2,10 +2,9 @@
   "name": "revision",
   "version": "1.0.0",
   "description": "vishal kumar",
-  
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "",
@@ -16,10 +15,10 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
   },
-
-  "browserslists":[
+  "browserslists": [
     "last 2 version"
   ]
 }

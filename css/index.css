@@ -1,4 +1,4 @@
-.header {
+/* .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -46,9 +46,9 @@
 
 .login:hover {
    background-color: #0056b3;
-}
+} */
 
-
+/* 
 .body {
    padding: 20px;
    background-color: #f8f9fa;
@@ -126,7 +126,7 @@
    margin-top: 5px;
    color: #007bff;
    font-size: 14px;
- }
+ } */
  
  
  

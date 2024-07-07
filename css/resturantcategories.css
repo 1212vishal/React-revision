@@ -1,0 +1,35 @@
+.restaurant-category {
+  margin-bottom: 20px; /* Adjust margin as needed */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.restaurant-category h1 {
+  cursor: pointer;
+  background-color: #333; /* Dark background color */
+  padding: 10px;
+  margin: 0;
+  color: #fff; /* White text color */
+  font-size: 1.5rem; /* Adjust heading font size */
+}
+
+.restaurant-category h1:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
+.restaurant-category .item-list {
+  padding: 10px;
+  background-color: #444; /* Darker background for item list */
+}
+
+.restaurant-category .item-list .item {
+  margin-bottom: 8px; /* Space between items */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .restaurant-category h1 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,58 @@
+/* General styles for the ResturantMenu component */
+.res-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+  }
+  
+  /* Style for the restaurant name */
+  .res-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Style for the cuisines and cost for two */
+  .res-details {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the menu title */
+  .menu-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Style for the list of menu items */
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Style for each menu item */
+  .menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+  }
+  

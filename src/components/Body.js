@@ -1,14 +1,17 @@
-import ResturantCard from "./ResturantCrad";
+import ResturantCard, { withPromotedLevel } from "./ResturantCrad";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useState, useEffect } from "react";
+import { withPromotedLevel } from "./ResturantCrad";
 
 const Body = () => {
   // console.log("body Render")
   const [resList, setresList] = useState([]);
   const [dupResList, setdupResList] = useState([]);
   const [searchText, setsearchText] = useState("");
+
+  const PromotedRes = withPromotedLevel(ResturantCard);
 
   useEffect(() => {
     fetchData();
@@ -83,7 +86,11 @@ const Body = () => {
       <div className="card-items">
         {dupResList.map((resturant) => (
           <Link to={"/resturants/" + resturant.info.id}>
-            <ResturantCard key={resturant.info.id} resData={resturant} />
+            {resturant.info.isOpen ? (
+              <PromotedRes resData={resturant} />
+            ) : (
+              <ResturantCard resData={resturant} />
+            )}
           </Link>
         ))}
       </div>

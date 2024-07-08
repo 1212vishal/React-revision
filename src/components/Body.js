@@ -2,14 +2,16 @@ import ResturantCard, { withPromotedLevel } from "./ResturantCrad";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { withPromotedLevel } from "./ResturantCrad";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   // console.log("body Render")
   const [resList, setresList] = useState([]);
   const [dupResList, setdupResList] = useState([]);
   const [searchText, setsearchText] = useState("");
+  const { loggedInUser, setuserName } = useContext(UserContext);
 
   const PromotedRes = withPromotedLevel(ResturantCard);
 
@@ -81,6 +83,15 @@ const Body = () => {
         >
           Top Rated Resturant
         </button>
+      </div>
+
+      <div className="m-4 p-4 flex items-centre">
+        <label>User :</label>
+        <input
+          className="m-2 border border-black"
+          value={loggedInUser}
+          onChange={(e) => setuserName(e.target.value)}
+        ></input>
       </div>
 
       <div className="card-items">
